@@ -1,0 +1,7 @@
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.top .left, .top .right{
+    display: flex;
+}

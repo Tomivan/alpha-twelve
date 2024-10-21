@@ -2,7 +2,7 @@ import React from 'react';
 import './bar-chart.component.css';
 
 const BarChart = () => {
-    <div></div>
+    return<div></div>
 }
 
 export default BarChart;

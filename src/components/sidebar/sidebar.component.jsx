@@ -7,17 +7,17 @@ import Notifications from '../../assets/images/notifications.svg';
 import Messages from '../../assets/images/messages.svg';
 import Settings from '../../assets/images/settings.svg';
 import Avatar from '../../assets/images/Avatar.svg';
-import 'sidebar.component.jsx';
+import './sidebar.component.css';
 
 const Sidebar = () => {
-    <div className='sidebar'>
+    return <div className='sidebar'>
         <ul>
             <li>
                 <img src={Home} alt='' className='sidebar-icon' />
                 Home
             </li>
             <li>
-                <img src={Events} alt='' className='siedebar-icon' />
+                <img src={Events} alt='' className='sidebar-icon' />
                 Events
             </li>
             <li>
@@ -45,7 +45,7 @@ const Sidebar = () => {
             <span>Collapse</span>
             <p>Dark Mode</p>
             <div className="user">
-                <img src={Avatar} alt="a vector of the user image" className='user-image'/>
+                <img src={Avatar} alt="a vector of the user" className='user-image'/>
                 <div className="user-info">
                     <p>Rudra Devi</p>
                     <p>rudra.devi@gmail.com</p>

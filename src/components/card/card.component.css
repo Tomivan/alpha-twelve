@@ -1,0 +1,16 @@
+.card{
+    width: 19vw;
+    height: 12vh;
+    border: 1px solid #0000001e;
+    margin-right: 2%;
+    padding: 0.5em;
+}
+.card-detail{
+    display: flex;
+}
+.card-image{
+    margin: -10% 0 0 2%;
+}
+.title{
+    color: #64748b;
+}
