@@ -1,0 +1,10 @@
+.bar-component {
+    width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+    .bar-component{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+}

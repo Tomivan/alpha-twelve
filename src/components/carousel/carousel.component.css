@@ -1,0 +1,14 @@
+.carousel-component{
+    width: 45%;
+    margin-left: 3%;
+}
+.slide-image{
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .carousel-component{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+}

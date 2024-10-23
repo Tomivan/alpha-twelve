@@ -4,13 +4,24 @@
     border: 1px solid #0000001e;
     margin-right: 2%;
     padding: 0.5em;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .card-detail{
     display: flex;
 }
 .card-image{
-    margin: -10% 0 0 2%;
+    margin: 2% 0 0 2%;
+    height: 2vh;
+    width: 2vw;
 }
 .title{
     color: #64748b;
+}
+
+@media screen and (max-width: 767px) {
+    .card{
+        width: 90vw;
+        margin-bottom: 2%;
+    }
 }

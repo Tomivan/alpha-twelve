@@ -1,11 +1,44 @@
+body.light {
+    --bg-color: #fff;
+    --text-color: #000;
+    --table-bg-color: #f9f9f9;
+    --input-bg-color: #fff;
+    --select-bg-color: #fff;
+}
+  
+  /* Dark theme */
+body.dark {
+    --bg-color: #333;
+    --text-color: #fff;
+    --table-bg-color: #444;
+    --input-bg-color: #555;
+    --select-bg-color: #555;
+}
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 .dashboard{
     display: flex;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
-.right{
+.body-right{
     margin-left: 3%;
+    width: 80%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.mid-page{
+    display: flex;
+    padding: 1em;
+}
+
+@media screen and (max-width: 767px) {
+    .mid-page{
+        flex-direction: column;
+    }
 }
