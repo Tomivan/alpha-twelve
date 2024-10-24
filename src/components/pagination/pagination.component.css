@@ -2,6 +2,12 @@
     display: flex;
     justify-content: center;
     margin-top: 3%;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+}
+.pagination{
+    background-color: var(--input-bg-color) !important;
+    color: var(--text-color) !important;
+}
+nav {
+    background-color: var(--input-bg-color) !important;
+    color: var(--text-color) !important;
 }

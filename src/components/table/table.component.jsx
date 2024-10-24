@@ -60,6 +60,10 @@ const Table = () => {
     // Total number of pages
     const totalPages = Math.ceil(filteredEvents.length / rowsPerPage);
 
+    const getStatusClass = (status) => {
+        return status === "In Progress" ? "status-in-progress" : "status-completed";
+      };
+
     return (
         <div className="table">
             <h2 className='heading'>Events History</h2>
@@ -98,10 +102,10 @@ const Table = () => {
                             </option>
                         ))}
                     </select>
-                    <p><strong>Displaying {rowsPerPage} results</strong></p>
+                    <p className='p'><strong>Displaying {rowsPerPage} results</strong></p>
                 </div>
                 <div className="right">
-                    <p>Sort:</p>
+                    <p className='p'>Sort:</p>
                     <p className='select'>Most Recent</p>
                     <img src={Dots} alt="" className='select'/>
                     <p className='select'>Export</p>
@@ -119,10 +123,10 @@ const Table = () => {
                 <tbody>
                     {paginatedEvents.map((event, index) => (
                         <tr key={index}>
-                        <td>{event.eventName}</td>
-                        <td>{event.date}</td>
-                        <td>{event.speaker}</td>
-                        <td>{event.status}</td>
+                        <td className='td'>{event.eventName}</td>
+                        <td className='td'>{event.date}</td>
+                        <td className='td'>{event.speaker}</td>
+                        <td className={getStatusClass(event.status)}>{event.status}</td>
                         </tr>
                     ))}
                 </tbody>
@@ -132,6 +136,7 @@ const Table = () => {
                     currentPage={currentPage}
                     totalPages={totalPages}
                     onPageChange={handlePageChange}
+                    className='pagination'
                 />
                 <div className="show">
                     <label>Show:</label>

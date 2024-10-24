@@ -16,7 +16,6 @@ const Dashboard = () => {
                 <CarouselComponent />
             </div>
             <Table />
-            <Pagination />
         </div>
     </div>
 }

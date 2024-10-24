@@ -7,4 +7,7 @@
         width: 90%;
         margin-bottom: 3%;
     }
+    .components {
+        height: 45vh !important;
+    }
 }

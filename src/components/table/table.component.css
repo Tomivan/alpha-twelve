@@ -11,7 +11,7 @@
     height: 6vh;
     border: 1px solid #0000001e;
     border-radius: 3px;
-    background-color: var(--bg-color) !important;
+    background-color: var(--input-bg-color) !important;
     color: var(--text-color) !important;
 }
 .heading {
@@ -50,16 +50,87 @@
 }
 tr{
     border-bottom: none;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
 }
-th, td{
+th, .td{
     padding: 1em;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
 }
 .bottom {
     display: flex;
     justify-content: space-between;
 }
+label, .p {
+    background-color: var(--input-bg-color) !important;
+    color: var(--text-color) !important;
+}
 .table{
     padding: 1em;
     background-color: var(--input-bg-color) !important;
     color: var(--text-color) !important;
+}
+
+.status-completed {
+    background-color: #d1fae5;
+    color: #10b981;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.status-in-progress {
+    background-color: #dbeafe;
+    color: #3b82f6;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.status-completed::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #28a745; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+.status-in-progress::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #007bff; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+    .top .left, .top .right{
+        flex-direction: column;
+    }
+    .select {
+        width: 30vw;
+    }
+    .search{
+        width: 50vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .top .left, .top .right{
+        flex-direction: column;
+    }
+    .select{
+        width: 30vw;
+    }
+    .search{
+        width: 50vw;
+    }
 }

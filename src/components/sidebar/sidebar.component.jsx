@@ -40,7 +40,16 @@ const Sidebar = () => {
     };
 
     const toggleSidebar = () => {
-        setSidebarOpen(!sidebarOpen);
+        const sidebar = document.querySelector('.sidebar');
+        const menu = document.querySelector('.menu-button')
+
+        if (sidebar.style.display === 'block') {
+            sidebar.style.display = 'none';
+            menu.style.left ='5%'
+        } else {
+            sidebar.style.display = 'block';
+            menu.style.left = '70%';
+        }
     };
 
     return (
